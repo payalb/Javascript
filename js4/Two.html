@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Event object</title>
+</head>
+<body>
+	When event occurs, event object is created and it stores information
+	about the event.
+	<pre>
+	Output would be :
+	h2 clicked
+	header clicked
+	body clicked
+	<h2>
+	Event fired from inner elements: This is Event bubbling.
+	</h2>
+	</pre>
+	<header>
+	<h2>Click!</h2>
+	</header>
+</body>
+<script type="text/javascript">
+	document.querySelector("h2").addEventListener("click", function(event){
+		alert(" h2 clicked!")
+	});
+	document.querySelector("header").addEventListener("click", function(event){
+		alert(" header clicked!")
+	});
+	document.querySelector("body").addEventListener("click", function(event){
+		alert(" body clicked!")
+	});
+</script>
+</html>

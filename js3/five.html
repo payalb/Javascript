@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Change css for elements</title>
+<style type="text/css">
+.c1{
+color: green;
+}
+</style>
+</head>
+<body>
+className always return string value
+<header>
+<h2>This is a para</h2>
+</header>
+</body>
+<script type="text/javascript">
+var h2= document.querySelector("header h2");
+/* h2.style.color="red";
+h2.style.backgroundColor="GreenYellow"; */
+//If we set h2.style.cssText= 'background-color:red; font-size: 25px;', this will remove all other styling
+h2.className += ' c1';
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function a() {
+		var name = "john";
+		b();
+		document.write(name);
+	}
+	function b() {
+		var name = "jimmy";
+		c();
+		document.write(name);
+	}
+	function c() {
+		var name = "jonny";
+		document.write(name);
+	}
+	a();
+</script>
+</head>
+<body>
+<pre>
+First function a is invoked, within which b is invoked
+and then c is invoked within it 
+so output is jonny jimmy john
+</pre>
+</body>
+</html>

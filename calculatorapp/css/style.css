@@ -1,0 +1,30 @@
+.align1{
+	
+	position: absolute;
+	top: 200px;
+}
+
+.title-align{
+	
+	position: absolute;
+	top: 40px;
+}
+
+#rev{
+	
+	color:red;
+}
+
+#adm{
+	color:white
+}
+
+form{
+	background-color: white;
+	padding: 15px;
+	border: 2px ridge #b5a99f;
+}
+
+body{
+	background-color: #bac4c4
+}

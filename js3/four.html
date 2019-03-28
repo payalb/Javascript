@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>getElementsByTagName</title>
+</head>
+<body>
+getElementsByTagName:returns htmlcollection.
+
+<pre>
+querySelectorAll("selector"): you can select multiple elements with multiple selectors separated by comma.
+: Returns NodeList
+Cannot use array methods with it
+To transform to array use: Array.from(coll);
+</pre>
+<ol>
+<li>Apple
+<li>Banana
+</ol>
+</body>
+<script type="text/javascript">
+var nl= document.querySelectorAll("li, #p1, h2");
+nl.forEach(function(elem){
+	document.write(elem.innerHTML);
+})
+</script>
+</html>

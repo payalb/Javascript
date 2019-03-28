@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Question1</title>
+<style type="text/css">
+h2,p{
+color : red;
+}
+
+.c1{
+font: italic;
+font-weight: bold;
+font-size: 30px;
+color: green
+}
+
+.c2{
+	background-color= 'brown';
+	
+}
+</style>
+</head>
+<body>
+<form>
+<h2>This is also a heading</h2>
+<header><h2 class="c1">This is My website!</h2></header>
+<article>
+<p id="p1">This is para1</p>
+<p id="p2" class="c1">This is para2</p>
+<p id="p3">This is para3</p> <!-- This is added text -->
+<!-- <p >this is para4</p> -->
+<input type="text" id="ip" > This is para 4
+<input type="button" name="click" onclick="changeText();">
+</article>
+</form>
+
+</body>
+<script type="text/javascript">
+function changeText(){
+	var elems= document.getElementsByClassName("c1");
+	for(index in elems){
+	document.write(elems[index].innerHTML);
+	}
+}
+</script>
+</html>

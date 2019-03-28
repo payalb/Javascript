@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function sum(a, b){
+	return a+b;
+}
+sum(32,24); // function statement
+
+//Function hoisting does not work for function expressions.
+var result = function(a,b){
+	return a+b;
+}//function expression
+
+/* This function can be called using variable name. This is a function with no name */
+ 
+ result(34,76);
+</script>
+</head>
+<body>
+Expression should return a value;
+statement does not. They are just instructions to be executed by browser.
+</body>
+</html>

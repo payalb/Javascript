@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Events</title>
+
+</head>
+<body>
+<!-- Only first onselect method will work -->
+<header><h2> <!-- onselect="style.color=red" onselect="style.color=yellow" -->Make page more interactive and dynamic</h2></header>
+<script type="text/javascript">
+var elem = document.querySelector("header h2");
+/* elem.onclick = function(){
+	document.write("text clicked!")
+} */
+h2.addEventListener('click',function(){
+	//This will not delete existing listeners. Will add one more
+});
+elem.onmouseover = function(){
+	elem.style.fontWeight = "bold";
+}
+
+elem.onmouseout = function(){
+	elem.style.fontWeight = "lighter";
+}
+</script>
+Event listener that attaches event handler to event without overriding others.
+</body>
+</html>

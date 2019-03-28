@@ -1,0 +1,77 @@
+
+h3{
+background-color: yellow;
+color: black;
+}
+
+#p1{
+/*  color: aqua; */
+}
+
+body{
+background-color: green;
+background-image: url('http://lorempixel.com/400/200/food');
+background-repeat: no-repeat;
+background-size: 100px 100px;
+background-attachment: fixed;
+line-height: 30px;
+/* letter-spacing: 40px; */
+}
+
+.c1{
+font: bolder;
+font-family: fantasy;
+border-style: double;
+border-color: fuchsia;
+border-width: 20px;
+color: #DC143C;
+text-align: center;
+font-size: 50px;
+}
+
+aside{
+
+}
+
+nav{display: block;
+	
+}
+
+nav a:link{
+display: block;
+text-decoration: none;
+color: red;
+}
+
+nav a:visited{
+display: block;
+text-decoration: none;
+color: black;
+}
+
+
+nav a:hover{
+font-size: 30px;
+color: blue;
+}
+
+p::first-letter {
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+/* p{
+display: inline;
+
+}
+ */
+ 
+ .a1{
+ }
+ 
+ a[class= "a1"]{
+ }
+ 
+ nav::nth-child(2) {
+	
+}

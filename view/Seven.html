@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+function sum(){
+	var x= document.getElementById("no1").value;
+	var y= document.getElementById("no2").value;
+	if(isNaN(parseFloat(x)+parseFloat(y))){
+		document.write("Enter valid input");
+	}else{
+	var sum= parseFloat(x)+parseFloat(y);
+	document.write(sum);
+	}
+}
+
+var x= "abc";
+var y= "xsd";
+var res= x-y ; //NaN
+
+
+var z= {name:"payal"}
+z=null;
+
+var w;
+</script>
+<body>
+
+Number1 : <input type="text" id="no1"/><br/>
+Number2 : <input type="text" id="no2"/><br/>
+<button onclick="sum();"></button>
+</body>
+</html>

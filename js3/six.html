@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>classList</title>
+<script type="text/javascript">
+.c1{
+	color: red;
+}
+
+.c2{
+	background-color: greenyellow;
+}
+</script>
+</head>
+<body>
+<pre>
+returns classname of an element as a DOMTokenList object. Useful to add,remove , toggle 
+css classes on an element
+This property is a readOnly
+</pre>
+</body>
+<script type="text/javascript">
+document.querySelector("pre").className= "c1";
+document.querySelector("pre").classList.add("c2");
+document.write(document.querySelector("pre").classList);
+//can use document.querySelector("pre").classList.remove("c1")
+//document.querySelector("pre").classList.toggle("c1"): will remove if exist, viceversa
+
+</script>
+</html>

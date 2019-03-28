@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Objects</title>
+<script type="text/javascript">
+
+ var address= new Object();
+ document.write(address); //{}
+ address.hNo= '10R';
+ address['street']= 'aggarwal colony';
+	var person= {
+			firstName : "Payal",
+			lastName : "Bansal",
+			age: 32,
+			prof: "engg.",
+			height: "5'2",
+			
+			speak : function(){
+				document.write("Speaking");
+			} ,
+			
+			permAddress: {
+				hno: "10r",
+				street: "delhi road"
+			},
+			tempAddress: address
+	}
+	document.write(person.age);
+	person.speak();
+	document.write(person['age']); //undefined
+	document.write(person.tempAddress.hNo);
+</script>
+</head>
+<body>
+	<pre>
+Collection of properties and methods represented as key value pair.
+Almost everything is object
+Create person object with properties like firstname, last name, age, prof, height
+</pre>
+</body>
+</html>

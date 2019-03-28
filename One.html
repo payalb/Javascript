@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+This is one.html
+
+<a  class="c1" href="./index.html"  onmouseleave="changeStyle();" onmouseover="style.color='red'" >Index Page</a>
+
+<a href="index.html">Index Page 1</a>
+
+<a   class="c1"  href="http://www.google.com"   target="_blank">Google</a>
+<input type="button" onclick="myFunc()">
+<button onclick="style.color='yellow'"  onfocus="changeText(this)">Click</button>
+</body>
+
+<script>
+/* var elems= document.querySelectorAll(".c1"); */
+var elems= document.getElementsByClassName("c1");
+for(var index=0; index< elems.length; index ++){
+	elems[index].style.color= "red"
+;}
+var aelems = Array.from(elems);
+aelems.forEach(function(elem){
+	elem.style.backgroundColor =  "yellow";
+});
+
+function changeText(elem){
+	elem.style.color=  "blue"
+}
+doHomework("maths", function(){
+	
+	alert("done");
+})
+function doHomework(subject, callback) {
+	  alert('Starting my '+ subject + ' homework.');
+	alert("still doing")
+	  callback();
+	}
+	
+function myFunc(){
+	var request= new XMLHttpRequest();
+	//request= new 
+	
+}
+function changeStyle(){
+	document.querySelector(".c1").style.color ="green"
+}
+</script>
+</html>
+
+<!-- http://localhost:8080/HtmlDemo1/One.html
+
+http://localhost:8080/HtmlDemo1/index.html -->

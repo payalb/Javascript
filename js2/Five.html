@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hoisting</title>
+<script type="text/javascript">
+
+document.write(a); //a is undefined
+document.write(b()); //20
+document.write(c);//undefined
+//document.write(c());//error: not recognized as method
+var a= 10;
+function b(){
+	return 20;
+}
+document.write(a); //10
+
+var c= function(){
+	document.write("an expression");
+}
+</script>
+</head>
+<body>
+<pre>
+Execution context is created and executed
+During creation stage, js engine provides memory space to all variables and methods.
+It assigns undefined value to all variables. This does not happen for functions, functions don't get default values.
+After creation stage, during execution stage, code executed line by line.
+
+</pre>
+</body>
+</html>

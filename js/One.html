@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Demo on variables in javascript</title>
+<script type="text/javascript">
+
+var isFlagged= true;//boolean
+var count=0;//number: integer or decimal
+var name="Payal";//string "" or ''
+var fruits= ["apple","pear","peach", "strawberry"];//array
+var stationery= new Array("pen","pencil","rubber","scale");
+
+for(item in stationery){
+	document.write(stationery[item]+ "<br/>");
+}
+
+if(true){
+ 	var a=22;
+ 	let b= 12; //scope only in the block where it has been defined.
+ 	const DVAR= 12;
+}
+document.write(a);
+//document.write("b is"+ b);
+const CVAR = 22;
+document.write("c is"+CVAR);
+//document.write("d is "+DVAR);
+const vArr= ["a","b","c"];
+vArr[3]="d";
+document.write("writing d");
+vArr.push("e");
+vArr.pop();
+document.write(vArr);
+document.write(vArr[0]);
+
+var gender= 'male';
+if(gender == 'male'){
+	document.write(true);
+}else{
+	document.write(false);
+}
+if(5===5 && 4===4){
+	document.write("condition is true");
+}else{
+	document.write("condition is false");
+}
+</script>
+</head>
+<body>
+<pre>
+We can start variable names with $ or _. Not with number or @.
+== does not check type whereas === is a strict check.
+same in the case of != and !==
+Type coercion: value from one type can be converted to other on runtime.
+we can use && ,|| and ! operators.
+
+</pre>
+</body>
+</html>

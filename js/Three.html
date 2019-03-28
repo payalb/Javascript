@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Passing Functions</title>
+<script type="text/javascript">
+	function calcPercentage(score) {
+		return score / 5 + "%";
+	}
+
+	function calcSum() {
+		var sum = 0;
+		for (var i = 0; i < arguments.length; i++) {
+			sum = sum + arguments[i];
+		}
+		document.write(sum+"<br/>");
+		return sum;
+	}
+	
+	
+	document.write(calcPercentage(calcSum(34,56,32,38,54)));
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form display</title>
+</head>
+<body>
+
+<h4>Please fill in the below form:</h4>
+
+<form action="./two.html">
+Name: <input type="text"  placeholder="Enter your name" maxlength="50" required autofocus/><br/>
+Password : <input type="password" required  maxlength="20" /><br/>
+Email: <input type="email" ><br/>
+DOB : <input type="date"/><br/>
+Subjects: <select multiple >
+<option>Java</option>
+<option>J2ee</option>
+<option>SQL</option>
+<option>HTML</option>
+</select><br/>
+Gender: 
+Male<input type="radio" name="gender" value="Male">
+Female<input type="radio" name="gender" value="female"><br/>
+Would you like to enroll for:
+subscriptions <input type="checkbox" name="enroll" value="sub">
+weekly notifications<input type="checkbox" name="enroll" value="not"><br/>
+
+Comments: <textarea rows="5" cols="50"></textarea>
+<input type="submit">
+
+</form>
+</body>
+</html>
