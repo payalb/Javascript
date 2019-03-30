@@ -2,8 +2,18 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Event Bubbling/ Event Capturing</title>
-<link rel="stylesheet" href="one.css">
+<title>Callback</title>
+<script type="text/javascript">
+function doTask(){
+	alert("doing");
+}
+
+function finishTask(callback){
+	callback();
+	alert("done")
+}
+finishTask(doTask);
+</script>
 </head>
 <body>
 <header><p>This para needs to be styled</p></header>

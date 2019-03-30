@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+Id: <input type="number" name="id" id="id"/>
+<input type="button" onclick="fetchDetails()"/>
+<h2>This is where data would be displayed</h2>
+</body>
+<script type="text/javascript">
+function fetchDetails(){
+	
+	var xhr= new XMLHttpRequest();
+	var id= document.getElementById("id").value;
+	xhr.open("GET","http://localhost:8080/ServletDemo1/myprofile?id="+ id);
+	xhr.send();
+	xhr.onreadystatechange= function(){
+		if(xhr.readyState ===4 && xhr.status === 200){
+			document.getElementsByTagName("h2")[0].innerHTML= xhr.responseText;
+		}
+	}
+}
+</script>
+</html>

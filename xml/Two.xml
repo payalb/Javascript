@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- system means document not stored in same file but an external file -->
+<!DOCTYPE player SYSTEM "two.dtd">
+<player game="badminton">
+<!-- game is an attribute in xml -->
+<firstName>Joe</firstName>
+<lastName>Steven</lastName>
+<averageScore>0.95</averageScore>
+</player>

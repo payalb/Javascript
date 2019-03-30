@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player>
+	<firstName>Joe</firstName>
+	<lastName>Steven</lastName>
+	<averageScore>0.95</averageScore>
+	<team>
+		<city>Arlington</city>
+		<country>USA</country>
+	</team>
+</player>

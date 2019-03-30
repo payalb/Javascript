@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Demo1</title>
+</head>
+<body>
+<img id="output"/>
+<button onclick="getJoke();">Click</button>
+<script type="text/javascript" >
+function getJoke(){
+var xhr= new XMLHttpRequest();//ready state 0 , client created, open() not called
+xhr.onreadystatechange= function(){
+	if(xhr.readyState == 4 && xhr.status == 200){
+		var response= xhr.responseText;
+		//converting string to json
+		var obj= JSON.parse(response);
+		document.querySelector("#output").setAttribute("src", obj.url);
+	}
+}
+xhr.open("GET","http://www.splashbase.co/api/v1/images/random")//opened state: 1
+xhr.send();//headers and status are available.
+}
+</script>
+</body>
+</html>

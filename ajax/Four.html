@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome User</title>
+<style type="text/css">
+body{
+color: green;
+}
+</style>
+<script type="text/javascript">
+function loadImage(){
+ var elem=document.querySelector("span");
+elem.innerHTML="<img src='http://lorempixel.com/400/200'>";
+
+var xhr= new XMLHttpRequest();
+xhr.open("GET","https://jsonplaceholder.typicode.com/todos/1");
+xhr.send();
+xhr.onreadystatechange= function(){
+	if(xhr.readyState===4 && xhr.status === 200){
+		alert(xhr.response);
+		document.write( xhr.responseText);
+	}
+}
+
+}
+</script>
+</head>
+<body>
+<pre>
+XMLHttpRequest.responseText Read only
+Returns a DOMString that contains the response to the request as text, or null if the request was unsuccessful or has not yet been sent.
+XMLHttpRequest.responseType
+Is an enumerated value that defines the response type.
+XMLHttpRequest.responseURL Read only
+Returns the serialized URL of the response or the empty string if the URL is null.
+</pre>
+
+<span></span>
+<input type="button" onclick="loadImage()" value="Load Image"/>
+</body>
+
+</html>
